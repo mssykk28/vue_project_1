@@ -1,24 +1,24 @@
 # vue_project_1
 
-## Project setup
+## プロジェクトの設定
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npmインストール
 ```
 
-### Compiles and minifies for production
+### 開発のためのコンパイルとホットリロード
+```
+npm ランサーブ
+```
+
+### 本番用にコンパイルとミニライズを行います。
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### リントと修正ファイル
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 設定のカスタマイズ
+設定リファレンス](https://cli.vuejs.org/config/)を参照してください。
