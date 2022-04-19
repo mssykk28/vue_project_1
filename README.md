@@ -21,4 +21,4 @@ npm run lint
 ```
 
 ### 設定のカスタマイズ
-設定リファレンス](https://cli.vuejs.org/config/)を参照してください。
+[設定リファレンスを参照してください。](https://cli.vuejs.org/config)
