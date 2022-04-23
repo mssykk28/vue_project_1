@@ -1,14 +1,14 @@
 <template>
-  <hello-world />
+  <wire-frame />
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import HelloWorld from "../components/HelloWorld.vue";
+import WireFrame from "../components/WireFrame.vue";
 
 export default Vue.extend({
   components: {
-    HelloWorld,
+    WireFrame,
   },
 });
 </script>
