@@ -3,7 +3,7 @@
     <v-list flat>
       <v-subheader>Tab</v-subheader>
       <v-list-item-group v-model="selectedItem" color="primary">
-        <v-list-item v-for="(item, i) in items" :key="i">
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.link">
           <v-list-item-icon>
             <v-icon v-text="item.icon"></v-icon>
           </v-list-item-icon>
@@ -21,14 +21,14 @@ export default {
   data: () => ({
     selectedItem: 1,
     items: [
-      { text: "Account", icon: "mdi-account" },
-      { text: "Test0", icon: "mdi-flag" },
-      { text: "Test1", icon: "mdi-flag" },
-      { text: "Test2", icon: "mdi-flag" },
-      { text: "Test3", icon: "mdi-flag" },
-      { text: "Test4", icon: "mdi-flag" },
-      { text: "Test5", icon: "mdi-flag" },
-      { text: "Test6", icon: "mdi-flag" },
+      { text: "Account", icon: "mdi-account", link: "/account" },
+      { text: "Test0", icon: "mdi-flag", link: "/account" },
+      { text: "Test1", icon: "mdi-flag", link: "/account" },
+      { text: "Test2", icon: "mdi-flag", link: "/account" },
+      { text: "Test3", icon: "mdi-flag", link: "/account" },
+      { text: "Test4", icon: "mdi-flag", link: "/account" },
+      { text: "Test5", icon: "mdi-flag", link: "/account" },
+      { text: "Test6", icon: "mdi-flag", link: "/account" },
     ],
   }),
 };
