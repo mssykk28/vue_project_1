@@ -1,12 +1,35 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer v-model="drawer" app>
-      <MenuItem
-    /></v-navigation-drawer>
-
-    <v-app-bar app>
-      <v-toolbar-title>Application</v-toolbar-title>
-    </v-app-bar>
+    <header>
+      <v-app-bar app dark>
+        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+        <v-toolbar-title>MySuite</v-toolbar-title>
+      </v-app-bar>
+      <v-navigation-drawer v-model="drawer" fixed temporary>
+        <v-list nav dense>
+          <v-list-item-group>
+            <v-list-item>
+              <v-list-item-title>HOME</v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>ABOUT</v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>WORK</v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>SERVICE</v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>BLOG</v-list-item-title>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-title>ACCESS</v-list-item-title>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-navigation-drawer>
+    </header>
 
     <v-main>
       <!--  -->
@@ -21,14 +44,10 @@
 </template>
 
 <script>
-import MenuItem from "./MenuItem";
-
 export default {
   data: () => ({
-    drawer: null,
+    drawer: false,
   }),
-  components: {
-    MenuItem,
-  },
+  components: {},
 };
 </script>
