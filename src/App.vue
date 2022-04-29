@@ -1,7 +1,7 @@
 <template>
   <v-app>
+    <WireFrame />
     <v-main>
-      <WireFrame />
       <router-view></router-view>
     </v-main>
   </v-app>
@@ -9,16 +9,16 @@
 
 <script lang="ts">
 import Vue from "vue";
-import WireFrame from "./components/WireFrame.vue";
+
+import WireFrame from "@/components/WireFrame.vue";
 
 export default Vue.extend({
   name: "App",
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
   components: {
     WireFrame,
   },
 });
 </script>
+<style></style>
