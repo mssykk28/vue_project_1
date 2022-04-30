@@ -8,15 +8,23 @@
     <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list nav>
         <v-list-item-group>
-          <MenuItem>
-            <template v-slot:icon> mdi-home </template>
-            <template v-slot:bodyText> Home </template>
-          </MenuItem>
+          <v-list-item to="/home">
+            <v-list-item-title>
+              <v-row class="ml-1">
+                <v-col cols="3"><v-icon>mdi-home</v-icon></v-col>
+                <v-col cols="8" class="pt-4">Home </v-col>
+              </v-row>
+            </v-list-item-title>
+          </v-list-item>
 
-          <MenuItem>
-            <template v-slot:icon> mdi-account </template>
-            <template v-slot:bodyText> Account </template>
-          </MenuItem>
+          <v-list-item to="/account">
+            <v-list-item-title>
+              <v-row class="ml-1">
+                <v-col cols="3"><v-icon>mdi-account</v-icon></v-col>
+                <v-col cols="8" class="pt-4">Account </v-col>
+              </v-row>
+            </v-list-item-title>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -24,11 +32,10 @@
 </template>
 
 <script>
-import MenuItem from "@/components/MenuItem";
 export default {
   data: () => ({
     drawer: false,
   }),
-  components: { MenuItem },
+  components: {},
 };
 </script>
