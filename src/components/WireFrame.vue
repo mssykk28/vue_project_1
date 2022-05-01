@@ -8,7 +8,7 @@
     <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list nav>
         <v-list-item-group>
-          <v-list-item to="/home">
+          <v-list-item to="/">
             <v-list-item-title>
               <v-row class="ml-1">
                 <v-col cols="3"><v-icon>mdi-home</v-icon></v-col>
