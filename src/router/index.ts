@@ -14,6 +14,11 @@ const routes: Array<RouteConfig> = [
     name: "Account",
     component: () => import("../views/AccountView.vue"),
   },
+  {
+    path: "/calendar",
+    name: "Calendar",
+    component: () => import("../views/CalendarView.vue"),
+  },
 ];
 
 const router = new VueRouter({

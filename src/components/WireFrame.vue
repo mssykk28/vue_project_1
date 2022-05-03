@@ -25,6 +25,15 @@
               </v-row>
             </v-list-item-title>
           </v-list-item>
+
+          <v-list-item to="/calendar">
+            <v-list-item-title>
+              <v-row class="ml-1">
+                <v-col cols="3"><v-icon>mdi-calendar</v-icon></v-col>
+                <v-col cols="8" class="pt-4">Calendar </v-col>
+              </v-row>
+            </v-list-item-title>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
