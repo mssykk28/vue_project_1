@@ -1,5 +1,5 @@
 <template>
-  <wire-frame />
+  <WireFrame />
 </template>
 
 <script lang="ts">
