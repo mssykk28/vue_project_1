@@ -3,10 +3,14 @@
     <v-expansion-panel v-for="(item, i) in 5" :key="i">
       <v-expansion-panel-header> Item </v-expansion-panel-header>
       <v-expansion-panel-content>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        <v-row align="center" justify="space-around">
+          <v-btn color="primary"> 稼働開始 </v-btn>
+          <v-btn color="error"> 稼働終了 </v-btn>
+        </v-row>
+        <v-row align="center" justify="space-around">
+          <v-btn color="primary"> 休憩開始 </v-btn>
+          <v-btn color="error"> 休憩終了 </v-btn>
+        </v-row>
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
