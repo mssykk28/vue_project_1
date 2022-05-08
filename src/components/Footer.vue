@@ -1,16 +1,9 @@
 <template>
   <v-footer dark padless>
     <v-row justify="center" no-gutters>
-      <v-btn
-        v-for="link in links"
-        :key="link"
-        color="white"
-        text
-        rounded
-        class="my-2"
-      >
-        {{ link }}
-      </v-btn>
+      <v-btn to="/" class="my-2" color="white" text>Home</v-btn>
+      <v-btn to="/account" class="my-2" color="white" text>Account</v-btn>
+      <v-btn to="/calendar" class="my-2" color="white" text>Calendar</v-btn>
       <v-col class="py-4 text-center white--text" cols="12">
         {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
       </v-col>
@@ -24,7 +17,11 @@ export default Vue.extend({
   name: "App",
 
   data: () => ({
-    links: ["Home", "About Us", "Team", "Services", "Blog", "Contact Us"],
+    links: [
+      { name: "Home", path: "/" },
+      { name: "Account", path: "/account" },
+      { name: "Calendar", path: "/calendar" },
+    ],
   }),
   components: {},
 });
