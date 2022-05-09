@@ -2,7 +2,7 @@
   <v-footer dark padless>
     <v-row justify="center" no-gutters>
       <v-btn to="/" class="my-2" color="white" text>Home</v-btn>
-      <v-btn to="/account" class="my-2" color="white" text>Account</v-btn>
+      <v-btn to="/members" class="my-2" color="white" text>Members</v-btn>
       <v-btn to="/calendar" class="my-2" color="white" text>Calendar</v-btn>
       <v-col class="py-4 text-center white--text" cols="12">
         {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
@@ -19,7 +19,7 @@ export default Vue.extend({
   data: () => ({
     links: [
       { name: "Home", path: "/" },
-      { name: "Account", path: "/account" },
+      { name: "Members", path: "/members" },
       { name: "Calendar", path: "/calendar" },
     ],
   }),

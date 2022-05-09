@@ -17,11 +17,11 @@
             </v-list-item-title>
           </v-list-item>
 
-          <v-list-item to="/account">
+          <v-list-item to="/members">
             <v-list-item-title>
               <v-row class="ml-1">
-                <v-col cols="3"><v-icon>mdi-account</v-icon></v-col>
-                <v-col cols="8" class="pt-4">Account </v-col>
+                <v-col cols="3"><v-icon>mdi-account-group</v-icon></v-col>
+                <v-col cols="8" class="pt-4">Members </v-col>
               </v-row>
             </v-list-item-title>
           </v-list-item>
