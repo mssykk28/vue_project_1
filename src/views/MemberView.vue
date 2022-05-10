@@ -41,5 +41,5 @@
     </v-expansion-panel>
   </v-expansion-panels>
 </template>
-<script></script>
+<script lang="ts"></script>
 <style></style>
