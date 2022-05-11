@@ -1,7 +1,7 @@
 <template>
   <v-expansion-panels>
-    <v-expansion-panel v-for="(item, i) in 5" :key="i">
-      <v-expansion-panel-header> Name </v-expansion-panel-header>
+    <v-expansion-panel v-for="item in items" :key="item.name">
+      <v-expansion-panel-header> {{ item.name }} </v-expansion-panel-header>
       <v-expansion-panel-content>
         <v-container>
           <v-col class="px-5 py-5">
@@ -41,5 +41,16 @@
     </v-expansion-panel>
   </v-expansion-panels>
 </template>
-<script lang="ts"></script>
+<script lang="ts">
+export default {
+  data: () => ({
+    items: [
+      { name: "Name1" },
+      { name: "Name2" },
+      { name: "Name3" },
+      { name: "Name4" },
+    ],
+  }),
+};
+</script>
 <style></style>
