@@ -90,8 +90,8 @@ export default Vue.extend({
     ],
   }),
   methods: {
-    getEvents({ start, end }) {
-      const events = [];
+    getEvents({ start, end }: { start: any; end: any }) {
+      const events: any = [];
 
       const min = new Date(`${start.date}T00:00:00`);
       const max = new Date(`${end.date}T23:59:59`);
@@ -116,10 +116,10 @@ export default Vue.extend({
 
       this.events = events;
     },
-    getEventColor(event) {
+    getEventColor(event: { color: any }) {
       return event.color;
     },
-    rnd(a, b) {
+    rnd(a: number, b: number) {
       return Math.floor((b - a + 1) * Math.random()) + a;
     },
   },
