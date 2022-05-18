@@ -3,7 +3,7 @@
     <v-expansion-panel v-for="item in items" :key="item.name">
       <v-expansion-panel-header>
         {{ item.name }}
-        <div>{{ condition }}</div>
+        <div class="ml-3">{{ condition }}</div>
       </v-expansion-panel-header>
       <v-expansion-panel-content :key="status">
         <v-container>
